@@ -1,0 +1,104 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  background-color: #111;
+  color: red;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #111;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: red;
+  color: white;
+}
+
+
+.movie-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+
