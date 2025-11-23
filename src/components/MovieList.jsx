@@ -1,12 +1,19 @@
-
 import React from "react";
-import MovieCard from "./Moviecard";
+import MovieCard from "./MovieCard";
 
 const MovieList = ({ movies }) => {
   return (
-    <div className="movie-list">
-      {movies.map((movie) => (
-        <MovieCard key={movie.imdbID} movie={movie} />
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "20px",
+        marginTop: "20px",
+      }}
+    >
+      {movies.map((movie, index) => (
+        <MovieCard key={movie.imdbID + index} movie={movie} />
       ))}
     </div>
   );
