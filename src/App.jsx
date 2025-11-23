@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -8,16 +7,11 @@ import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/movie-react-app">
       <Navbar />
       <Routes>
-        <
-          Route path="/"
-          element={<Home />} 
-          
-          />
-
-           <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
       </Routes>
     </Router>
   );
